@@ -1,0 +1,22 @@
+function countBs(entertext){
+  var count = 0;
+  	for (let i=0; i < entertext.length; i++){
+    	if (entertext.charAt(i) == 'B'){
+        	count++;
+        }
+    }
+  return count;
+}
+
+function countChar(firsttext, searchtext){
+	var count = 0;
+  	for (let i=0; i < firsttext.length; i++){
+    	if (firsttext.charAt(i) == searchtext){
+        	count++;
+        }
+    }
+  return count;
+}
+
+console.log(countBs("BBC"));
+console.log(countChar("kakkerlak", "k"));
